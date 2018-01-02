@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Moyenne:jar">
+    <output-path>$USER_HOME$/Documents/idea</output-path>
+    <root id="archive" name="Moyenne.jar">
+      <element id="module-output" name="Moyenne" />
+    </root>
+  </artifact>
+</component>
