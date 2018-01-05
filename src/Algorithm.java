@@ -2,22 +2,16 @@ import java.util.ArrayList;
 
 public class Algorithm {
 
-    private ArrayList<Double> notes;
-    private ArrayList<Double> coeffs;
+    private ArrayList<Double> notes = new ArrayList<>();
+    private ArrayList<Integer> coeffs = new ArrayList<>();
 
-    public void addNote(Double note) {
+    public void add(Double note, Integer coeff) {
         notes.add(note);
-    }
-
-    public void removeNote(){
-        notes.removeAll(notes);
-    }
-
-    public void addCoeff(Double coeff) {
         coeffs.add(coeff);
     }
 
-    public void removeCoeff(){
+    public void remove(){
+        notes.removeAll(notes);
         coeffs.removeAll(coeffs);
     }
 
@@ -25,16 +19,20 @@ public class Algorithm {
         return notes;
     }
 
-    public ArrayList<Double> getCoeffs() {
+    public ArrayList<Integer> getCoeffs() {
         return coeffs;
     }
 
-    public Double calcul(Double notes, Double coeffs){
+    public Double calcul(){
 
-        int result;
+        Double cumul = 0.0;
+        int totalcoeffs = 0;
+        for(int i=0; i<notes.size(); i++){
+            cumul += (notes.get(i)*coeffs.get(i));
+            totalcoeffs += coeffs.get(i);
+        }
 
-
-        return null;
+        return cumul/totalcoeffs;
 
     }
 
