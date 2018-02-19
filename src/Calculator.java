@@ -10,6 +10,8 @@ public class Calculator extends JFrame {
     private boolean clicOperateur = false, update = false;
     private String operateur = "";
     JLabel l = new JLabel("Hey");
+    
+    //here is the main calculator
 
     public Calculator() {
         this.setSize(400, 400);

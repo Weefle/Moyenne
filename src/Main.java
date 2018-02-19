@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
@@ -6,15 +7,20 @@ public class Main {
         Calculator calculette = new Calculator();
         Algorithm algo = new Algorithm();
         Scanner sc = new Scanner(System.in);
+        HashMap<String, Double> person = new HashMap<>();
         Boolean typing = true;
         //we enter notes here
         while (typing == true){
+        	//améliorer le code
+        	System.out.println("Veuillez saisir une personne:");
+        	String s = sc.next();
             System.out.println("Veuillez saisir une note:");
             Double n = sc.nextDouble();
             System.out.println("Veuillez saisir un coefficient:");
             Integer c = sc.nextInt();
             algo.add(n, c);
-            System.out.println("La moyenne est de: " + algo.calcul());
+            person.put(s, algo.calcul());
+            System.out.println("La moyenne de " + s + " est de: " + person.get(s));
         }
     }
 }

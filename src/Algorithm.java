@@ -1,9 +1,12 @@
 import java.util.ArrayList;
 
 public class Algorithm {
+	
+	//here is the algorithm
 
     private ArrayList<Double> notes = new ArrayList<>();
     private ArrayList<Integer> coeffs = new ArrayList<>();
+    //faire en sorte que les notes et coeffs appartiennent à une personne
 
     public void add(Double note, Integer coeff) {
         notes.add(note);
