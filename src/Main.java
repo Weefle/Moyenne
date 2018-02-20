@@ -3,13 +3,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //here is the main code, the inputs
+        //ici le code principal, les entrées
         Calculator calculette = new Calculator();
         Algorithm algo = new Algorithm();
         Scanner sc = new Scanner(System.in);
-        HashMap<String, Double> person = new HashMap<>();
+        // on créer un tableau de 2 dimensions (notes et coeffs) pour une clé qui est la personne
+        HashMap<String, Double[][]> person = new HashMap<>();
         Boolean typing = true;
-        //we enter notes here
+        //on entre les données ici
         while (typing == true){
         	//améliorer le code
         	System.out.println("Veuillez saisir une personne:");
@@ -19,8 +20,8 @@ public class Main {
             System.out.println("Veuillez saisir un coefficient:");
             Integer c = sc.nextInt();
             algo.add(n, c);
-            person.put(s, algo.calcul());
-            System.out.println("La moyenne de " + s + " est de: " + person.get(s));
+            personnote.put(s, algo.calcul());
+            System.out.println("La moyenne de " + s + " est de: " + personnote.get(s));
         }
     }
 }

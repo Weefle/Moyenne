@@ -11,7 +11,7 @@ public class Calculator extends JFrame {
     private String operateur = "";
     JLabel l = new JLabel("Hey");
     
-    //here is the main calculator
+    //ici le calculateur graphique
 
     public Calculator() {
         this.setSize(400, 400);

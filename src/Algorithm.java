@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Algorithm {
 	
-	//here is the algorithm
+	//ici l'algorithme principal
 
     private ArrayList<Double> notes = new ArrayList<>();
     private ArrayList<Integer> coeffs = new ArrayList<>();
