@@ -9,7 +9,6 @@ public class Main {
         Boolean typing = true;
         //on entre les données ici
         while (typing == true){
-        	//améliorer le code
         	System.out.println("Veuillez saisir une personne:");
         	String s = sc.next();
         	Eleve eleve = new Eleve(s);
