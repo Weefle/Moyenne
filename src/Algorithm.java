@@ -1,42 +1,26 @@
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Algorithm {
 	
 	//ici l'algorithme principal
-
-    private ArrayList<Double> notes = new ArrayList<>();
-    private ArrayList<Integer> coeffs = new ArrayList<>();
+    private HashMap<String, Double> total = new HashMap<>();
+    private Eleve eleve = null;
     //faire en sorte que les notes et coeffs appartiennent à une personne
 
-    public void add(Double note, Integer coeff) {
-        notes.add(note);
-        coeffs.add(coeff);
+    public void add(String player, Double note, int coeff) {
+    	/*Eleve eleve = new Eleve(player);*/
+    	eleve = new Eleve(player);
+    	eleve.addNote(note);
+    	eleve.addCoeff(coeff);
     }
-
-    public void remove(){
-        notes.removeAll(notes);
-        coeffs.removeAll(coeffs);
+    
+    public void removeTotal(String player) {
+    	total.remove(player);
     }
-
-    public ArrayList<Double> getNotes() {
-        return notes;
-    }
-
-    public ArrayList<Integer> getCoeffs() {
-        return coeffs;
-    }
-
-    public Double calcul(){
-
-        Double cumul = 0.0;
-        int totalcoeffs = 0;
-        for(int i=0; i<notes.size(); i++){
-            cumul += (notes.get(i)*coeffs.get(i));
-            totalcoeffs += coeffs.get(i);
-        }
-
-        return cumul/totalcoeffs;
-
+    
+    public Double getTotal(String player) {
+    	total.put(player, eleve.calcul());
+    	return total.get(player);
     }
 
 }
