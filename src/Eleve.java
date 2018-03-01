@@ -50,19 +50,4 @@ public class Eleve {
         coeffs.removeAll(coeffs);
     }
 	
-	public Double calcul(){
-
-        Double cumul = 0.0;
-        int totalcoeffs = 0;
-        for(int i=0; i<notes.size(); i++){
-            cumul += (notes.get(i)*coeffs.get(i));
-            totalcoeffs += coeffs.get(i);
-        }
-
-        return cumul/totalcoeffs;
-
-    }
-	
-	
-
 }

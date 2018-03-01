@@ -11,7 +11,6 @@ public class Main {
         while (typing == true){
         	System.out.println("Veuillez saisir une personne:");
         	String s = sc.next();
-        	Eleve eleve = new Eleve(s);
             System.out.println("Veuillez saisir une note:");
             Double n = sc.nextDouble();
             System.out.println("Veuillez saisir un coefficient:");
