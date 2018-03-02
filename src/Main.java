@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
 public class Main {
+	static Calculator calculette = new Calculator();
+    static Algorithm algo = new Algorithm();
+    static Scanner sc = new Scanner(System.in);
+    static Boolean typing = true;
+    //static List<Eleve> eleves = new ArrayList<>();
     public static void main(String[] args) {
         //ici le code principal, les entrées
-        Calculator calculette = new Calculator();
-        Algorithm algo = new Algorithm();
-        Scanner sc = new Scanner(System.in);
-        Boolean typing = true;
         //on entre les données ici
         while (typing == true){
         	System.out.println("Veuillez saisir une personne:");
@@ -15,8 +16,7 @@ public class Main {
             Double n = sc.nextDouble();
             System.out.println("Veuillez saisir un coefficient:");
             Integer c = sc.nextInt();
-            algo.add(s, n, c);
-            System.out.println("La moyenne de " + s + " est de: " + algo.getTotal(s));
+            System.out.println("La moyenne de " + s + " est de: " + algo.result(s, n, c));
         }
     }
 }
