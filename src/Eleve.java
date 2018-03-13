@@ -7,8 +7,8 @@ public class Eleve {
 	private List<Double> notes;
 	private List<Integer> coeffs;
 	
-	public Eleve(/*String nom*/) {
-		//this.name = nom;
+	public Eleve(String nom) {
+		this.name = nom;
 		this.notes = new ArrayList<>();
 		this.coeffs = new ArrayList<>();
 	}

@@ -17,6 +17,10 @@ public class Main {
             System.out.println("Veuillez saisir un coefficient:");
             Integer c = sc.nextInt();
             System.out.println("La moyenne de " + s + " est de: " + algo.result(s, n, c));
+            System.out.println("Voila: " + algo.eleve.getName());
+            for(int i = 0; i < algo.eleves.size(); i++) {
+            	System.out.println("Eleve numéro " + i + ": " + algo.eleves.get(i));
+            }
         }
     }
 }

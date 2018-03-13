@@ -4,18 +4,18 @@ import java.util.List;
 public class Algorithm {
 	
 	//ici l'algorithme principal
-	private List<Eleve> eleves = new ArrayList<>();
-	private Eleve eleve = new Eleve();
+	public List<String> eleves = new ArrayList<>();
+	public Eleve eleve;
 
-    public Double result(String player, Double note, int coeff) {
-    		if(eleves.contains(eleve)) {
+	public Double result(String player, Double note, int coeff) {
+    		if(!eleves.contains(player)) {
+        		eleve = new Eleve(player);
     			eleve.addNote(note);
         		eleve.addCoeff(coeff);
+        		eleves.add(player);
     		}else {
-    			eleve.setName(player);
     			eleve.addNote(note);
         		eleve.addCoeff(coeff);
-        		eleves.add(eleve);
     		}
     		return calcul(eleve);
     }
