@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Eleve {
+	//ici l'objet élève avec une note et un coefficient assignés
 	
 	private String name;
 	private List<Double> notes;

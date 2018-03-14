@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class Main {
+	//un programme coder par BENOIT DUBOIS pour calculer la moyenne de plusieurs élèves
 	static Calculator calculette = new Calculator();
     static Algorithm algo = new Algorithm();
     static Scanner sc = new Scanner(System.in);
     static Boolean typing = true;
-    //static List<Eleve> eleves = new ArrayList<>();
     public static void main(String[] args) {
         //ici le code principal, les entrées
         //on entre les données ici
