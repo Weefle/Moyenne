@@ -1,14 +1,21 @@
 import java.awt.Dimension;
 import javax.swing.*;
 
+@SuppressWarnings("serial")
 public class Calculator extends JFrame {
     private JPanel container = new JPanel();
-    private JLabel ecran = new JLabel();
-    private Dimension dim = new Dimension(50, 40);
-    private Dimension dim2 = new Dimension(50, 31);
-    private double chiffre1;
-    private boolean clicOperateur = false, update = false;
-    private String operateur = "";
+    @SuppressWarnings("unused")
+	private JLabel ecran = new JLabel();
+    @SuppressWarnings("unused")
+	private Dimension dim = new Dimension(50, 40);
+    @SuppressWarnings("unused")
+	private Dimension dim2 = new Dimension(50, 31);
+    @SuppressWarnings("unused")
+	private double chiffre1;
+    @SuppressWarnings("unused")
+	private boolean clicOperateur = false, update = false;
+    @SuppressWarnings("unused")
+	private String operateur = "";
     JLabel l = new JLabel("Hey");
     
     //ici le calculateur graphique
